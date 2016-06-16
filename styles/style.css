@@ -12,6 +12,8 @@
     font-size: 25px;
 }
 
+.separator {background-image: url(../images/hr_color.png);}
+
 /* Header */
 .header-entete {background-image: url(../images/header.jpg);
     height:95vh;
@@ -38,9 +40,9 @@
 }
 
 h1 {font-size: 40px;
-    font-weight: 600;
+    font-weight: 900;
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     color: rgb(129,24,16);
     margin-left: 50px;
 }
@@ -51,7 +53,7 @@ h1 {font-size: 40px;
 
 .bonjour {
     text-align: justify;
-    width: 900px;
+    width: calc(0.6 * 100%);
     margin: 0 auto;
 }
 
@@ -61,21 +63,25 @@ h2 {color: #5B160B;
     margin-left: 90px;
     margin-top: 110px;
     margin-bottom: 50px;
+    font-size: 30px
 }
 
-.loisir {width: 100%;
+.loisir {
     margin: 0 auto;
-    width: 900px;
+    padding-left: calc(0.1 * 100%);
 }
 
 .loisir p {float: left;
-    width: calc(0.4 * 100%);
-    padding:30px; 
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    width: calc(0.45 * 100%);
+    padding:10px; 
     font-size: 20px;
 }
 
 .loisir1 {float: left;
-    width: calc(100% / 2);
+    width: calc(100% / 3);
     height:250px;    
 }
 
@@ -91,9 +97,31 @@ h2 {color: #5B160B;
     float: left;
 }
 
+.crayon {background-image: url(../images/crayon.png);
+    height: 190px;
+    width: 150px;
+    float: left;
+}
+
 
 /*Compétences*/
 .orgacompetences {padding-left: 50px;}
+
+h3 {text-align: center;
+    color: #5B180E;
+    font-size:30px;
+    font-weight:600; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.orgacompetences p {text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    width: calc(0.8 * 100%);
+    margin: 0 auto;
+
+}
 
 .graph {width: calc(1 / 4 * 100%);
     float:left;
@@ -102,6 +130,7 @@ h2 {color: #5B160B;
 .imggraphisme {background-image: url(../images/competences_graphisme.png);
     width: 260px;
     height: 260px;
+    margin: 0 auto;
 }
 
 .adv {width: calc(1 / 4 * 100%);
@@ -111,6 +140,7 @@ h2 {color: #5B160B;
 .imgadv {background-image: url(../images/competences_audiovisuel.png);
     width: 260px;
     height: 260px;
+    margin: 0 auto;
 }
 
 .com {width: calc(1 / 4 * 100%);
@@ -120,6 +150,7 @@ h2 {color: #5B160B;
 .imgcom {background-image: url(../images/competences_communication.png);
     width: 260px;
     height: 260px;
+    margin: 0 auto;
 }
 
 .web {width: calc(1 / 4 * 100%);
@@ -129,5 +160,15 @@ h2 {color: #5B160B;
 .imgweb {background-image: url(../images/competences_integration.png);
     width: 260px;
     height: 260px;
+    margin: 0 auto;
 }
+
+/*Parcours*/
+.imgparcours {background-image: url(../images/Parcours.png);
+    width: 1450px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+
 

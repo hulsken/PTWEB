@@ -6,8 +6,10 @@
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/menu.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/portfolio.css">
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="menu.js"></script>
+        <script src="portfolio.js"></script>
   
     </head>
     <body>
@@ -43,12 +45,16 @@
                 <div class="loisir">
                      <div class="loisir1">
                           <div class="clesol"></div>
-                          <p>Formation musicale à l’école de la musique de Haguenau
+                          <p>J'ai suivi une formation musicale à l’école de la musique de Haguenau. J'ai ainsi pu acquérir une ouverture d'esprit et de bonnes bases musicale.
                           </p>
                      </div>
                      <div class="loisir1">
                          <div class="chant"></div>
-                         <p>Chanteuse dans plusieurs groupes</p>
+                         <p>Après avoir pris des cours de chant, je chante actuellement dans des groupes de musiques rock. Ces expériences scéniques m'ont permis de prendre confiance en moi.</p>
+                     </div>
+                     <div class="loisir1">
+                         <div class="crayon"></div>
+                         <p>Dessiner pendant mon temps libre me permet de me détendre et de laisser libre cours à mon imagination </p>
                      </div>
                 </div>
                 
@@ -62,22 +68,26 @@
                    <div class="graph">
                         <div class="imggraphisme"></div>
                         <h3>Graphisme</h3>
-                        <p></p>
+                        <p>Les logiciels Photoshop et Illustrator me permettront de vous réaliser des montages photos, des logos et pictogrammes.
+                        </p>
                    </div>
                    <div class="adv">
                         <div class="imgadv"></div>
                         <h3>Audiovisuel</h3>
-                        <p></p>
+                        <p>Réaliser des vidéos pour la promotion d’un évènement de la prise de vue jusqu’au montage à l’aide du logiciel Premiere pro.
+                        </p>
                    </div>
                    <div class="com">
                         <div class="imgcom"></div>
                         <h3>Communication</h3>
-                        <p></p>
+                        <p>Rédaction web, animation de réseaux sociaux, organisation de projet événementiel.
+                        </p>
                    </div>
                    <div class="web">
                         <div class="imgweb"></div>
                         <h3>Webdesign</h3>
-                        <p></p>
+                        <p>Réaliser des sites web à l’aide du langage Html5 / Css3.
+                        </p>
                    </div>
                </div>
            </section>
@@ -86,20 +96,49 @@
            
            <section class="parcours">
               <h1>Parcours</h1>
-               <div></div>
+               <div class="imgparcours"></div>
            </section>
            
            <hr>
            
-           <section class="portfolio">
+           <section class="portfoliot">
               <h1>Portfolio</h1>
-               <ul>
-                   <li>Tous</li>
-                   <li>Logo</li>
-                   <li>Graphisme</li>
-                   <li>Maquette</li>
-               </ul>
-               <div></div>
+               
+                <div class="wrapper portfolio">
+                    <nav class="tri">
+                        <ul>
+                        <li id="all" class="active">all</li>
+                        <li id="print">print</li>
+                        <li id="web">web</li>
+                        <li id="responsive">responsive</li>
+                        </ul>
+                        <div class="clear"></div>
+                    </nav>
+
+
+                <!-- STRUCTURE D'UN ELEMENT -->
+                    <a href="/item/01" class="item print">
+                        <h3 class="item-title">Titre de mon élément</h3>
+                    <hr class="hr-title-top">
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta minus quo, officia culpa explicabo, eum sint sapiente voluptas vel, voluptatum tempore veniam consequuntur rem mollitia magnam ipsum eaque est!</p>
+                        <hr class="hr-title-bot">
+                        <button class="view-more">View more</button>
+                    <div class="black-overlay"></div>
+                    <div class="background" style="background:url('images/competences_communication.png')"></div>
+                    </a>
+                    
+                    <!-- STRUCTURE D'UN ELEMENT -->
+                    <a href="/item/01" class="item responsive">
+                        <h3 class="item-title">Titre de mon élément</h3>
+                    <hr class="hr-title-top">
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta minus quo, officia culpa explicabo, eum sint sapiente voluptas vel, voluptatum tempore veniam consequuntur rem mollitia magnam ipsum eaque est!</p>
+                        <hr class="hr-title-bot">
+                        <button class="view-more">View more</button>
+                    <div class="black-overlay"></div>
+                    <div class="background" style="background:url('images/competences_communication.png')"></div>
+                    </a>
+                </div> <!-- Fermeture de la div wrapper -->
+            
            </section>
            
            <hr>
