@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.wrapper{
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+}
+
+/* Header */
+.header-entete {background-image: url(../images/header.jpg);
+    height:95vh;
+    background-repeat: no-repeat; 
+    margin: 0 auto;
+    background-position: center center;
+    position: relative;
+}
+
+.objectif {
+    text-align: center;
+    position: absolute;
+    color: white;
+    bottom: 22vh;
+    left:0;
+    right:0;
+}
+
+.objectif p {
+    margin: 0 auto;
+    background-color: rgba(1, 1, 1, 0.6);
+    width: 350px;
+    border-radius: 60px;
+}
+
+h1 {font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: rgb(129,24,16);
+    margin-left: 50px;
+}
+
+
+/*Présentation*/
+.titrepresent {margin-top: 130px;}
+
+.bonjour {
+    text-align: justify;
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*Loisirs*/
+h2 {color: #5B160B;
+    font-weight: 600;
+    margin-left: 90px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.loisir {width: 100%;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.loisir p {float: left;
+    width: calc(0.4 * 100%);
+    padding:30px; 
+    font-size: 20px;
+}
+
+.loisir1 {float: left;
+    width: calc(100% / 2);
+    height:250px;    
+}
+
+.clesol {background-image: url(../images/clesol.png);
+    height: 190px;
+    width: 150px;
+    float: left;
+}
+
+.chant {background-image: url(../images/micro.png);
+    height: 190px;
+    width: 150px;
+    float: left;
+}
+
+
+/*Compétences*/
+.orgacompetences {padding-left: 50px;}
+
+.graph {width: calc(1 / 4 * 100%);
+    float:left;
+}
+
+.imggraphisme {background-image: url(../images/competences_graphisme.png);
+    width: 260px;
+    height: 260px;
+}
+
+.adv {width: calc(1 / 4 * 100%);
+    float:left;
+}
+
+.imgadv {background-image: url(../images/competences_audiovisuel.png);
+    width: 260px;
+    height: 260px;
+}
+
+.com {width: calc(1 / 4 * 100%);
+    float:left;
+}
+
+.imgcom {background-image: url(../images/competences_communication.png);
+    width: 260px;
+    height: 260px;
+}
+
+.web {width: calc(1 / 4 * 100%);
+    float:left;
+}
+
+.imgweb {background-image: url(../images/competences_integration.png);
+    width: 260px;
+    height: 260px;
+}
+

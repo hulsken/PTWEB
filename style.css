@@ -8,16 +8,23 @@
     font-size: 25px;
 }
 
-.header-entete {background-image: url(images/header.jpg);
-    height:1020px;
+/* Header */
+.header-entete {background-image: url(./images/header.jpg);
+    position: relative;
+    height:95vh;
     background-repeat: no-repeat; 
     margin: 0 auto;
-    
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-entete p {
+    text-align: center;
 }
 
 h1 {font-size: 40px;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 40px;
     color: rgb(129,24,16);
     margin-left: 50px;

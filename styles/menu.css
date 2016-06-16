@@ -1,4 +1,10 @@
 /*Menu*/
+/*sticky*/
+.fixed {position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 /* Alignement du menu */
 .header-nav {
 	text-align: center;
@@ -12,7 +18,6 @@
    Faire passer le menu en inline (inline-block, inline-table ou inline-flex) pour le rendre sensible à l'alignement à droite. Ses items aussi sont en inline.
 */
 
-
 .header-nav ul,
 .header-nav li {
 	display: inline;
@@ -22,7 +27,7 @@
 .header-nav a {
 	position: relative;
 	display: inline-block;
-	padding: 8px 40px;
+	padding: 4px 20px;
 	vertical-align: middle;
 	font-weight: 300; /* entre regular et light */
 	letter-spacing: 0.025em;
@@ -49,26 +54,5 @@
 	opacity: .6;
 	transform: translateY(0);
 }
-/* Je vire outline car juste au-dessus je définis un style :focus */
-.header-nav a:focus {
-	outline: none;
-}
 
-/*Animation*/
-.nav-is-stuck .main-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-	animation: stickAnim .3s;
-}
- 
-@keyframes stickAnim {
-	0% {
-		transform: translateY(-86px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
+
