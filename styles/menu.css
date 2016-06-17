@@ -10,7 +10,7 @@
 	text-align: center;
     background-color: darkred;
     color: white;
-    height: 40px;
+    height: 60px;
     padding-bottom: 10px;
     padding-top: 4px;
 }
@@ -22,9 +22,10 @@
 .header-nav li {
 	display: inline;
 	list-style: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 .header-nav a {
+    margin-top: 7px;
 	position: relative;
 	display: inline-block;
 	padding: 4px 20px;
