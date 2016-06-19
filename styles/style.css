@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
+hr {border-color: red;}
+
 .clearfix:after{
     display: block;
     content: '';
@@ -12,7 +14,13 @@
     font-size: 25px;
 }
 
-.separator {background-image: url(../images/hr_color.png);}
+.separator {background-image: url(../images/hr_color.png);
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background-position: center center;
+    margin-top: 100px;
+}
 
 /* Header */
 .header-entete {background-image: url(../images/header.jpg);
@@ -75,14 +83,13 @@ h2 {color: #5B160B;
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
-    width: calc(0.45 * 100%);
-    padding:10px; 
+    width: calc(0.5 * 100%);
+    padding-left:10px; 
     font-size: 20px;
 }
 
 .loisir1 {float: left;
-    width: calc(100% / 3);
-    height:250px;    
+    width: calc(100% / 3); 
 }
 
 .clesol {background-image: url(../images/clesol.png);
@@ -171,4 +178,102 @@ h3 {text-align: center;
 }
 
 
+/*Contact*/
+.contact {width: 100%;
+    margin: 0 auto;
+}
 
+.infocontact {width: calc(0.5 * 100%);
+    height:500px;
+    float: left;
+}
+
+.contact li {display: block;
+    height:79px;
+    padding-left: 50px;
+}
+
+.contact p {padding: 15px;
+}
+
+.adresse {background-image: url(../images/contact-ad.png);
+    width: 76px;
+    height: 76px;
+    float: left;
+    margin-right: 20px;
+}
+.tel {background-image: url(../images/contact-tel.png);
+    width: 76px;
+    height: 76px;
+    float: left;
+    margin-right: 20px;
+}
+.mail {background-image: url(../images/contact-mail.png);
+    width: 76px;
+    height: 76px;
+    float: left;
+    margin-right: 20px;
+}
+
+.linkedin {background-image: url(../images/contact-in.png);
+    width: 76px;
+    height: 76px;
+    float: left;
+    margin-right: 20px;
+}
+
+.cv {background-image: url(../images/contact-cv.png);
+    width: 76px;
+    height: 76px;
+    float: left;
+    margin-right: 20px;
+}
+
+/*Message contact*/
+.formulaire {width: calc(0.5 * 100%);
+    height: 500px;
+    float: right;
+    padding-right: 70px;
+}
+
+input[type=text]{margin-bottom: 20px;
+    margin-top: 10px;
+    width:100%;
+    padding: 15px;
+    border-radius:5px;
+    border:1.5px solid #5B180E;
+}
+
+input[type=submit]{margin-bottom: 20px;
+    width:100%;
+    padding: 15px;
+    border-radius:5px;
+    color: #5B180E;
+    font-size:15px;
+    cursor:pointer;
+}
+
+#submit:hover{background-color: black;
+}
+
+textarea{width:100%;
+    padding: 15px;
+    margin-top: 10px;
+    border:1px solid #5B180E;
+    border-radius:5px;
+    margin-bottom: 20px;
+    resize:none;
+}
+
+input[type=text]:focus,textarea:focus {
+    border-color: #5B180E;
+}
+
+/*Footer*/
+footer {background-color: #5B180E;
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    float: left;
+    width: 100%;
+}

@@ -1,0 +1,77 @@
+@media (max-width:1500px) {
+    .imgparcours {background-image: url(../images/Parcoursr1500.png);
+    width: 900px;
+    height: 484px;
+    margin: 0 auto;
+    }
+}
+
+@media (max-width:1150px) {
+    .wrapper {background-color: yellow;
+    }
+    /*Loisirs*/
+    .loisir {
+    margin: 0 auto;
+    padding-left: calc(0.1 * 100%);
+    }
+
+    .loisir p {float: left;
+        margin: 0 auto;
+        text-align-last: center;
+        width: calc(0.6 * 100%);
+        padding-left: 50px;
+    }
+
+    .loisir1 {float: none;
+        width: calc(0.9 *100%);
+        height:200px;
+    }
+
+    .clesol {float: left;
+        margin: 0 auto;
+    }
+
+    .chant {
+        margin: 0 auto;
+    }
+
+    .crayon {
+        margin: 0 auto;
+    }
+
+    /*Compétences*/
+    .imggraphisme {background-image: url(../images/competences_graphisme2.png);
+        height: 220px;
+        width: 220px;
+    }
+    .imgadv{background-image: url(../images/competences_audiovisuel2.png);
+        height: 220px;
+        width: 220px;
+    }
+    .imgcom{background-image: url(../images/competences_communication2.png);
+        height: 220px;
+        width: 220px;
+    }
+    .imgweb{background-image: url(../images/competences_integration2.png);
+        height: 220px;
+        width: 220px;
+    }
+}
+
+
+/*TABLETTE*/
+
+@media (max-width:960px) {
+    .wrapper{ background-color: rebeccapurple;
+}
+    .nav {}
+    .bonjour {
+    width: calc(0.67 * 100%);
+}
+
+
+/*Smartphone*/
+@media (max-width:420px){
+    .wrapper {background-color: aqua;}
+}
+    

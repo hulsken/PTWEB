@@ -4,12 +4,15 @@
         <title>Seven Oaks Web Page</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/reset.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/portfolio.css">
         <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="contact.php">
+        <link rel="stylesheet" href="styles/style-responsive.css">
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="/js/menu.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+       
   
     </head>
     <body>
@@ -25,11 +28,11 @@
 
                     <nav class="header-nav">
                         <ul>
-                            <li><a href="#">Présentation</a></li>
-                            <li><a href="#">Compétences </a></li>
-                            <li><a href="#">Parcours    </a></li>
-                            <li><a href="#">Portfolio   </a></li>
-                            <li><a href="#">Contact     </a></li>
+                            <li><a href="#presentation">  Présentation</a></li>
+                            <li><a href="#competence">    Compétences </a></li>
+                            <li><a href="#parcours">      Parcours    </a></li>
+                            <li><a href="#portfolio">     Portfolio   </a></li>
+                            <li><a href="#contact">       Contact     </a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,7 +40,7 @@
            
             
         <main class="wrapper">
-            <section class="presentation clearfix">
+            <section class="presentation clearfix" id="presentation">
                 <h1 class="titrepresent">Présentation</h1>
                 <p class="bonjour">Bonjour, je m’appelle Sarah Hulsken. Je suis actuellement étudiante en DUT 
     Métiers du multimédias et de l’internet à l’IUT d’Haguenau. J'aimerais pouvoir mettre mes capacités au service de la communication visuelle.</p>
@@ -62,7 +65,7 @@
            
            <div class="separator"></div>
            
-           <section class="competences clearfix">
+           <section class="competences clearfix" id="competence">
              <h1>Compétences</h1>
               <div class="orgacompetences">
                    <div class="graph">
@@ -92,16 +95,16 @@
                </div>
            </section>
            
-           <hr>
+           <div class="separator"></div>
            
-           <section class="parcours">
+           <section class="parcours" id="parcours">
               <h1>Parcours</h1>
                <div class="imgparcours"></div>
            </section>
            
-           <hr>
+           <div class="separator"></div>
            
-           <section class="portfoliot">
+           <section class="portfoliot" id="portfolio">
               <h1>Portfolio</h1>
                
                 <div class="container">
@@ -169,47 +172,48 @@
             
            </section>
            
-           <hr>
+           <div class="separator"></div>
            
-           <section class="contact">
+           <section class="contact" id="contact">
                <h1>Contact</h1>
-               <div>
+               <div class="infocontact">
                    <ul>
                       <li>
                            <p>Sarah HULSKEN</p>
                        </li>
                        <li>
-                           <div></div>
-                           <p>9, rue aux trois alouettes</p>
-                           <p>67500 Haguenau</p>
+                           <div class="adresse"></div>
+                           <p>9, rue aux trois alouettes 67500 Haguenau</p>
                        </li>
                        <li>
-                           <div></div>
+                           <div class="tel"></div>
                            <p>06.86.63.60.02</p>
                        </li>
                        <li>
-                           <div></div>
+                           <div class="mail"></div>
                            <p>sarahulsken@gmail.com</p>
                        </li>
                        <li>
-                           <div></div>
-                           <p>facebook</p>
+                           <div class="linkedin"></div>
+                           <p>fr.linkedin.com/in/shulsken</p>
                        </li>
                        <li>
-                           <div></div>
-                           <p>linkedin</p>
+                           <div class="cv"></div>
+                           <a href="images/CV.pdf" download="curiculum_vitae"><p>Télécharger mon CV</p></a>
                        </li>
                    </ul>
                </div>
                
-               <form class="formulaire" method="post" action="envoi.php">
-                <fieldset>
-                    <input type="text" value="Email..." class="text" id="email"/>								
-                    <input type="text" value="Nom..." class="text" id="nom"/>								
-                    <label for="message">
-                    <textarea cols="3" rows="3" class="text" id="message">Votre Message</textarea>
-                    </label>
-               </form>
+               <div class="msgcontact">
+                   <form class="formulaire" method="post" action="envoi.php">
+                    <fieldset>
+                        <input type="text" placeholder="Email..." class="text" name="email"/>								
+                        <input type="text" placeholder="Nom..." class="text" name="nom"/>								
+                        <textarea cols="30" rows="5" class="text" id="message" name="message" placeholder="Votre Message"></textarea>
+                        <input type="submit" name="envoi" value="Envoyer">
+                       </fieldset>
+                   </form>
+               </div>
                
                
            </section>
