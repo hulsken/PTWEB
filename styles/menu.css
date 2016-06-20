@@ -5,35 +5,21 @@
     width: 100%;
 }
 
-/* Alignement du menu */
-.header-nav {
-	text-align: center;
-    background-color: darkred;
-    color: white;
-    height: 60px;
-    padding-bottom: 10px;
-    padding-top: 4px;
-}
-/*
-   Faire passer le menu en inline (inline-block, inline-table ou inline-flex) pour le rendre sensible à l'alignement à droite. Ses items aussi sont en inline.
-*/
 
-.header-nav ul,
-.header-nav li {
-	display: inline;
-	list-style: none;
-    font-size: 25px;
+
+.col1 {
+    float: left;
+    width: calc(100% / 5);
+    height: 2em;
+    text-align: center;
+    padding: 5px;
+    background-color: #5B180E;
+    color: #fff;
 }
+
+
 .header-nav a {
-    margin-top: 7px;
-	position: relative;
-	display: inline-block;
-	padding: 4px 20px;
-	vertical-align: middle;
-	font-weight: 300; /* entre regular et light */
-	letter-spacing: 0.025em;
 	color: inherit;
-	text-decoration: none;
 }
 
 /* Animation du lien */

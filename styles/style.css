@@ -79,6 +79,10 @@ h2 {color: #5B160B;
     padding-left: calc(0.1 * 100%);
 }
 
+.loisir1 {float: left;
+    width: calc(100% / 3); 
+}
+
 .loisir p {float: left;
     text-align: justify;
     -moz-text-align-last: center;
@@ -86,10 +90,6 @@ h2 {color: #5B160B;
     width: calc(0.5 * 100%);
     padding-left:10px; 
     font-size: 20px;
-}
-
-.loisir1 {float: left;
-    width: calc(100% / 3); 
 }
 
 .clesol {background-image: url(../images/clesol.png);
@@ -197,33 +197,33 @@ h3 {text-align: center;
 }
 
 .adresse {background-image: url(../images/contact-ad.png);
-    width: 76px;
+    width: 74px;
     height: 76px;
     float: left;
     margin-right: 20px;
 }
 .tel {background-image: url(../images/contact-tel.png);
-    width: 76px;
+    width: 74px;
     height: 76px;
     float: left;
     margin-right: 20px;
 }
 .mail {background-image: url(../images/contact-mail.png);
-    width: 76px;
+    width: 74px;
     height: 76px;
     float: left;
     margin-right: 20px;
 }
 
 .linkedin {background-image: url(../images/contact-in.png);
-    width: 76px;
+    width: 74px;
     height: 76px;
     float: left;
     margin-right: 20px;
 }
 
 .cv {background-image: url(../images/contact-cv.png);
-    width: 76px;
+    width: 74px;
     height: 76px;
     float: left;
     margin-right: 20px;

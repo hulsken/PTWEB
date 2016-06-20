@@ -1,36 +1,194 @@
-.filtr-item {
-    padding: 1rem;
+.portfolio .item {
+    width: 48%; 
+    display: block; 
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1em;
+    position: relative; /* La position relative permet de dire que les éléments suivants devront se placer par rapport à celui ci. On transforme .item en référence pour les prochains éléments qui seront en position absolute. */
+    height: 300px;
+    overflow: hidden; /* Grâce à cette ligne, on évite les débordements, et surtout on cache l'état 0 des animations. */
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2); /* Permet d'ajouter une ombre portée légère, les paramètres dans l'ordre sont : x, y, portée, couleur. */
+    transition: all .2s ease-in-out; /* Comme pour le menu, on ajoute la transition pour créer un easing sur nos animations. */
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    text-decoration: none; /* On se débarasse des vilains soulignements */
 }
-.item-desc {
-    background-color: rgba(0,0,0,0.5);
+ 
+/* Ici les SUITES MATHÉMATHIQUES ! : Explication :
+On peut utiliser des sélecteurs comme :first-child, :last-child, :nth-child(2), etc..
+Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce aux suites mathématiques, il est possible de créer une constance.
+:nth-child(xn + y) : n est en fait un compteur qui va s'incrémenter (0, 1, 2, 3, etc..). On peut ainsi créer une formule de math : Il est important de visualiser ce que tu veux faire ! Nous on est partis sur 2 colonnes, et je vais cibler les .item tous les 2n (0, 2, 4, 6, 8, etc.. Tous les chiffres pairs) */
+ 
+.portfolio .item:nth-child(2n) {
+    float: right;
+}
+ 
+.portfolio .item:nth-child(2n+1) {
+    float: left;
+}
+ 
+.portfolio .item .black-overlay {
+    position: absolute; /* Permet de placer l'overlay par rapport au premier parent en position relative, .item donc. */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; /* Les 4 lignes left, right, top et bottom ici permettent de dire à l'élément de se coller au bord à gauche, à droite, en haut et en bas : Il prend donc 100% de la largeur et de la hauteur de son parent automatiquement ! */
+    height: 300px;
+    z-index: -1; /* z-index permet de créer des "calques" : De base à 0, ici on recule ce calque car le prochain calque sera le texte, qui ne doit pas être affecté par l'overlay. */
+    background: rgba(1,1,1,0.54); /* La couleur de notre overlay, j'ai appelé la classe ".black-overlay" mais elle n'est pas de couleur noire, my bad ! */
+    opacity: 0; /* Et de base, l'overlay n'est pas affichée. Elle sert uniquement à l'animation. */
+}
+ 
+.portfolio .item:hover .black-overlay {
+    opacity: 1; /* Justement : On active l'overlay au passage de la souris. */
+}
+ 
+.portfolio .item .hr-title-top {
+    width: 0%; /* De base, nos séparateurs ne doivent pas être affichés. Comme mon animation est de les faire apparaître progressivement (de la gauche vers la droite), je vais jouer sur la propriété "width", pour donner un effet de trait qui se dessine. */
+    height: 1px;
+    background: #fff;
+    border: none;
+    margin: 0; /* On remet à zéro le margin avant de le manipuler plus bas */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: all .4s ease-in-out; /* On leur applique à nouveau les transitions pour appliquer le easing. Note qu'ici j'ai mis 0,4s plutôt que 0,2 : C'est pour donner un effet de délai entre les différentes animations. */
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+ 
+.portfolio .item .hr-title-bot {
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    border: none;
+    margin: 0;
+    margin-top: 20px;
+    display: block;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+ 
+.portfolio .item:hover .hr-title-top, .portfolio .item:hover .hr-title-bot {
+    width: 20%; /* Et ici on règle la largeur finale de ces traits lorsqu'ils se dessineront. L'élément le plus important du sélecteur c'est le ".item:hover" : Ce dernier dit à notre CSS de s'activer uniquement lorsqu'on passe la souris sur ".item". */
+}
+ 
+.portfolio .item .background {
+    background-size: cover; /* Ici on dit que l'image doit s'adapter à la div "background" automatiquement. */
+    background-position: center center; /* Si l'image est trop grande, elle se placera au milieu de la div automatiquement */
+    position: absolute; /* On place la div qui contient l'image en position absolute afin de lui donner une position en faisant référence à la div parente (".item") */
+    left: 0;
+    top: 0; /* On place la div en haut à gauche */
+    width: 100%; /* On dit que la div fait la taille du parent (".item") en largeur */
+    z-index: -2; /* On place la div en dessous de l'overlay (donc l'overlay de couleur sera au dessus de l'image, et le texte sera au dessus de l'overlay) */
+    height: 300px;
+    transform: scale(1); /* La transformation "scale" permet de créer un effet de zoom. Par défaut elle est à 1. On initialise donc l'animation avec l'état de base. */
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all .2s ease-in-out; /* Et la fameuse transition, toujours ! */
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+ 
+.portfolio .item:hover .background {
+    transform: scale(1.5); /* L'animation qui fait que l'image zoom au passage de la souris. */
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+}
+ 
+.portfolio .item .item-title {
     color: white;
-    position: absolute;
+    font-size: 20px;
     text-transform: uppercase;
-    text-align: center;
-    padding: 1rem;
-    z-index: 1;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
+    font-weight: 900;
+    position: relative; /* On place notre titre en position relative afin de pouvoir le déplacer par rapport à son parent ('.item'). */
+    top: 100px; /* Notre titre possède un effet qui apparait du bas vers le haut, pour ça, de base on place notre titre plus bas que prévu. */
+    line-height: 1.3em;
+    transition: all .2s ease-in-out; /* Et on prévoit l'animation. */
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;    
+    -webkit-transition: all .2s ease-in-out;
+    opacity: 0; /* De base, il n'est pas affiché du tout, en opacité à 0% : Grâce à ça on va pouvoir le faire apparaitre progressivement également. */
+}
+ 
+.portfolio .item:hover .item-title {
+    top: 0; /* A la fin de l'animation, le titre sera à top: 0. */
+    opacity: 1; /* Et on lui donne l'opacité à la fin de l'animation (En fait, en 0,2s, l'animation sera passée de 0% à 100% d'opacité : D'où l'effet de easing qui calcule les pas intermédiaires tout seul). */
+}
+ 
+/* De même pour la description, on va la faire apparaître de la droite vers la gauche. Le principe est exactement le même ! */
+ 
+.portfolio .item .item-description {
+    line-height: 1.5em;
+    position: relative;
+    left: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-shadow: 0 0 5px rgba(0,0,0,.4);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    opacity: 0;
+}
+ 
+.portfolio .item:hover .item-description {
+   opacity: 1;
+   left: 0;
 }
 
-/* Filter controls */
-.simplefilter li, .multifilter li, .sortandshuffle li {
-    color: white;
-    cursor: pointer;
-    display: inline-block;
+.portfolio .item .view-more {
+    /* Ici c'est que du style "graphique", rien concernant l'animation ou le positionnement encore. */
+    font-weight: 300;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 150px;
+    
+    /* Petit trick ici : Je veux qu'il soit au milieu de ma box, pour ça : position absolute, left 50%, et le décaler de -(sa largeur / 2) : -150/2 = -75. */
+    /* La box doit être en position relative pour que ça fonctionne. */
+    position: absolute;
+    left: 50%;
+    bottom: 0px; /* Animation : Le bouton apparaît du bas vers le haut, donc de base il est au bord du bas. */
+    background: transparent; /* De base, le bouton n'a pas de background. C'est juste du texte et une bordure. */
+    margin-left: -75px;
+    text-align: center;
+    transition: all .2s ease-in-out; /* On prépare l'animation. */
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    opacity: 0; /* Animation : De base, le bouton est à 0% d'opacité. */
 }
-.simplefilter li {
-    background-color: #585858;
+ 
+.portfolio .item .view-more:hover {
+   background: rgba(0,0,0,.4);
+   font-weight: 900;
 }
-.simplefilter li.active {
-    background-color: #212121;
-}
-.multifilter li {
-    background-color: #4b9eff;
-}
-.multifilter li.active {
-    background-color: #2265b4;
+ 
+.portfolio .item:hover .view-more {
+    opacity: 1;
+    bottom: 10px; /* A la fin de l'animation, le bouton est à 20px du bord et il est à 100% d'opacité. */
 }
