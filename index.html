@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Seven Oaks Web Page</title>
+        <title>Sarah Hulsken</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/reset.css">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/portfolio.css">
         <link rel="stylesheet" href="styles/menu.css">
-        <link rel="stylesheet" href="contact.php">
+        <link rel="stylesheet" href="styles/portfolio.css">
         <link rel="stylesheet" href="styles/style-responsive.css">
+        /*Nav Sticky*/
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        /*Nav Smooth scroll*/
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="/js/menu.js"></script>
-        <link rel="stylesheet" href="font-awesome.css">
+        /*Formulaire contact*/
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="contact.php">
        
   
     </head>
     <body>
        <div class="wrapper">
+           
             <header id="header" role="banner" class="main-header">
                <div class="header-inner">
                
@@ -41,24 +45,30 @@
            
             
         <main class="wrapper">
+           <!--Présentation-->
             <section class="presentation clearfix" id="presentation">
                 <h1 class="titrepresent">Présentation</h1>
-                <p class="bonjour">Bonjour, je m’appelle Sarah Hulsken. Je suis actuellement étudiante en DUT 
-    Métiers du multimédias et de l’internet à l’IUT d’Haguenau. J'aimerais pouvoir mettre mes capacités au service de la communication visuelle.</p>
+                <p class="bonjour">
+                Bonjour, je m’appelle Sarah Hulsken, étudiante en première année de DUT 
+    Métiers du Multimédias et de l’Internet à l’IUT d’Haguenau. Cette formation me permet d'acquérir des compétences pluridisciplinaires telles que que le graphisme,  la communication,  l'audiovisuel ainsi que le web. Mon objectif serait de pouvoir mettre mes capacités au service de la communication visuelle.
+                  </p>
+                   <!--Loisirss-->
                 <h2>Loisirs</h2>
                 <div class="loisir">
                      <div class="loisir1">
                           <div class="clesol"></div>
-                          <p>J'ai suivi une formation musicale à l’école de la musique de Haguenau. J'ai ainsi pu acquérir une ouverture d'esprit et de bonnes bases musicale.
+                          <p>J'ai suivi une formation musicale à l’école de la musique de Haguenau. J'ai ainsi pu acquérir une ouverture d'esprit et de bonnes bases musicales.
                           </p>
                      </div>
                      <div class="loisir1">
                          <div class="chant"></div>
-                         <p>Après avoir pris des cours de chant, je chante actuellement dans des groupes de musiques rock. Ces expériences scéniques m'ont permis de prendre confiance en moi.</p>
+                         <p>Après avoir pris des cours de chant, j'ai rejoint des groupes de musique rock. Ces différentes expériences scéniques m'ont permis de prendre confiance en moi.
+                         </p>
                      </div>
                      <div class="loisir1">
                          <div class="crayon"></div>
-                         <p>Dessiner pendant mon temps libre me permet de me détendre et de laisser libre cours à mon imagination </p>
+                         <p>Pendant mon temps libre je me prends le temps de dessiner pour laisser libre cours à mon imagination.
+                         </p>
                      </div>
                 </div>
                 
@@ -66,19 +76,22 @@
            
            <div class="separator"></div>
            
+           
+           <!--Compétences-->
            <section class="competences clearfix" id="competence">
              <h1>Compétences</h1>
               <div class="orgacompetences">
                    <div class="graph">
                         <div class="imggraphisme"></div>
                         <h3>Graphisme</h3>
-                        <p>Les logiciels Photoshop et Illustrator me permettront de vous réaliser des montages photos, des logos et pictogrammes.
+                        <p>
+                        Les logiciels Photoshop et Illustrator me permettront de vous réaliser des montages photos, des logos et des pictogrammes.
                         </p>
                    </div>
                    <div class="adv">
                         <div class="imgadv"></div>
                         <h3>Audiovisuel</h3>
-                        <p>Réaliser des vidéos pour la promotion d’un évènement de la prise de vue jusqu’au montage à l’aide du logiciel Premiere pro.
+                        <p>Réaliser des vidéos pour la promotion d’un évènement de la prise de vues jusqu’au montage à l’aide du logiciel Premiere pro.
                         </p>
                    </div>
                    <div class="com">
@@ -90,7 +103,7 @@
                    <div class="web">
                         <div class="imgweb"></div>
                         <h3>Webdesign</h3>
-                        <p>Réaliser des sites web à l’aide du langage Html5 / Css3.
+                        <p>Réaliser des sites web à l’aide des langages HTML / CSS.
                         </p>
                    </div>
                </div>
@@ -98,6 +111,8 @@
            
            <div class="separator"></div>
            
+           
+           <!--Parcours-->
            <section class="parcours" id="parcours">
               <h1>Parcours</h1>
                <div class="imgparcours"></div>
@@ -105,33 +120,91 @@
            
            <div class="separator"></div>
            
+           
+           
+           <!--Portfolio-->
            <section class="portfolio clearfix" id="portfolio">
               <h1>Portfolio</h1>
+              <div class="itemsp">
+                    <div class="elmtportfolio">
+                        <a href="images/fablab.png" class="item">
+                            <h3 class="item-title">Logo PicLab</h3>
+                            <hr class="hr-title-top">
+                            <p class="item-description">
+                                Réalisation d'un logo fictif pour le FabLab de Colmar. Choix d'une charte graphique alliant collaboration et technique d'où le mélange des lettres arrondies fusionnées et des lettres géométriques. La couleur met en avant le dynamisme de l'organisation.</p>
+                            <hr class="hr-title-bot">
+                            <button class="view-more">View more</button>
+                            <div class="black-overlay"></div>
+                            <div class="background" style="background:url('images/fablab.png')"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="elmtportfolio">
+                        <a href="/images/wireframe-piclab2.png" class="item">
+                            <h3 class="item-title">Maquette PicLab</h3>
+                            <hr class="hr-title-top">
+                            <p class="item-description">
+                               Dans la même optique que le logo nous avons réalisé en cours une maquette pour le site PicLab de Colmar. L'objectif était de garder la charte graphique du logo.
+                            </p>
+                            <hr class="hr-title-bot">
+                            <button class="view-more">View more</button>
+                            <div class="black-overlay"></div>
+                            <div class="background" style="background:url('images/wireframe-piclab1.png')"></div>
+                            </a>
+                    </div>
 
-           
-            <div class="elmtportfolio">
-                <a href="/item/01" class="item">
-                    <h3 class="item-title">Titre de mon élément</h3>
-                    <hr class="hr-title-top">
-                    <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta minus quo, officia culpa explicabo, eum sint sapiente voluptas vel, voluptatum tempore veniam consequuntur rem mollitia magnam ipsum eaque est!</p>
-                    <hr class="hr-title-bot">
-                    <button class="view-more">View more</button>
-                    <div class="black-overlay"></div>
-                    <div class="background" style="background:url('images/competences_audiovisuel.png')"></div>
-                </a>
-            </div>
+                    <div class="elmtportfolio">
+                        <a href="images/portesouvertesaffiche.png" class="item">
+                            <h3 class="item-title">Affiche portes ouvertes IUT Haguenau</h3>
+                            <hr class="hr-title-top">
+                            <p class="item-description">Réalisation d'une affiche pour les portes ouvertes de l'IUT de Haguenau en suivant la charte graphique d'Isidro Ferrer, graphiste influant du du monde actuel du design.</p>
+                            <hr class="hr-title-bot">
+                            <button class="view-more">View more</button>
+                            <div class="black-overlay"></div>
+                            <div class="background" style="background:url('images/portesouvertes.png')"></div>
+                        </a>
+                    </div>
+                       
+                       <div class="elmtportfolio">
+                        <a href="/images/logo-libra2.png" class="item">
+                            <h3 class="item-title">Logo Libra</h3>
+                            <hr class="hr-title-top">
+                            <p class="item-description">Logo réalisé pour un groupe de métal progressif. Libra est le signe astrologique de la balance, le L a donc était choisi comme pilier rattachant le dessin au texte permettant ainsi d'atteindre un certain équilibre.</p>
+                            <hr class="hr-title-bot">
+                            <button class="view-more">View more</button>
+                            <div class="black-overlay"></div>
+                            <div class="background" style="background:url('images/logo-Libra.png')"></div>
+                            </a>
+                    </div>
+
+                       <div class="elmtportfolio">
+                        <a href="/images/wireframe_etchever_entier.png" class="item">
+                            <h3 class="item-title">Wireframe Etchever</h3>
+                            <hr class="hr-title-top">
+                            <p class="item-description">En cours de gestion de projets nous avons dû répondre aux attentes d'une entreprise fictive, Etchever, voulant réaliser un site vitrine mettant en avant la construction de maison en bois écologique. </p>
+                            <hr class="hr-title-bot">
+                            <button class="view-more">View more</button>
+                            <div class="black-overlay"></div>
+                            <div class="background" style="background:url('images/wireframe_etchever.png')"></div>
+                        </a>
+                  </div>
+                       
+                       
+                       
+                    <div class="elmtportfolio">
+                        <a href="/images/affiche-festival2.png" class="item">
+                            <h3 class="item-title">Affiche Festival</h3>
+                            <hr class="hr-title-top">
+                            <p class="item-description">Cette affiche a été réalisée pour un festival voulant promouvoir la langue française à travers la musique. Sa cible est ici les plus de 18 ans. </p>
+                            <hr class="hr-title-bot">
+                            <button class="view-more">View more</button>
+                            <div class="black-overlay"></div>
+                            <div class="background" style="background:url('images/affiche-festival.png')"></div>
+                        </a>
+                    </div>
+                        
+               </div>
                
-            <div class="elmtportfolio">
-                <a href="/item/01" class="item">
-                    <h3 class="item-title">Titre de mon élément</h3>
-                    <hr class="hr-title-top">
-                    <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta minus quo, officia culpa explicabo, eum sint sapiente voluptas vel, voluptatum tempore veniam consequuntur rem mollitia magnam ipsum eaque est!</p>
-                    <hr class="hr-title-bot">
-                    <button class="view-more">View more</button>
-                    <div class="black-overlay"></div>
-                    <div class="background" style="background:url('images/competences_audiovisuel.png')"></div>
-                </a>
-            </div>
                 
                 
                 
@@ -139,7 +212,7 @@
            </section>
            
            <div class="separator"></div>
-           
+           <!--Contact-->
            <section class="contact" id="contact">
                <h1>Contact</h1>
                <div class="infocontact">
@@ -161,7 +234,7 @@
                        </li>
                        <li>
                            <div class="linkedin"></div>
-                           <p>fr.linkedin.com/in/shulsken</p>
+                           <p>fr.linkedin.com/in/shulsken</p>                         
                        </li>
                        <li>
                            <div class="cv"></div>
@@ -170,12 +243,14 @@
                    </ul>
                </div>
                
+               <!--Formulaire conract -->
                <div class="msgcontact">
-                   <form class="formulaire" method="post" action="envoi.php">
+                   <form class="formulaire" method="post" action="contact.php">
                     <fieldset>
                         <input type="text" placeholder="Email..." class="text" name="email"/>								
-                        <input type="text" placeholder="Nom..." class="text" name="nom"/>								
-                        <textarea cols="30" rows="5" class="text" id="message" name="message" placeholder="Votre Message"></textarea>
+                        <input type="text" placeholder="Nom..." class="text" name="nom"/>
+                        <input type="text" placeholder="Objet..." class="text" name="objet"/>								
+                        <textarea cols="20" rows="3" class="text" id="message" name="message" placeholder="Votre Message"></textarea>
                         <input type="submit" name="envoi" value="Envoyer">
                        </fieldset>
                    </form>
@@ -186,10 +261,9 @@
             
         </main>
         
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="filterizr/jquery.filterizr.js"></script>
-    <script src="js/controls.js"></script>
+   
+
+
 
         <footer>
             <div>

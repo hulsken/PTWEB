@@ -7,8 +7,6 @@
 }
 
 @media (max-width:1150px) {
-    .wrapper {background-color: yellow;
-    }
     .bonjour {
     width: calc(0.67 * 100%);
 }
@@ -33,6 +31,7 @@
     }
 
     /*Compétences*/
+    .orgacompetences {padding-left: calc(0.01 * 100%);}
     .imggraphisme {background-image: url(../images/competences_graphisme2.png);
         height: 220px;
         width: 220px;
@@ -55,12 +54,6 @@
 /*TABLETTE*/
 
 @media (max-width:960px) {
-    .wrapper{ background-color: rebeccapurple;
-    }
-    /*Nav*/
-    header h1 {
-        display: none;
-    }    
     
     .loisir {
     padding-left: calc(0.01 * 100%);
@@ -85,6 +78,10 @@
     width: 400px;
     height: 540px;
     margin: 0 auto;
+    }
+    
+        .portfolio .item {
+        width: 400px;
     }
     
     /*Contact*/
@@ -131,6 +128,10 @@
 
 /*Smartphone*/
 @media (max-width:420px){
-    .wrapper {background-color: aqua;}
+    .portfolio .item {
+        width: 250px;
+    }
+    
+   
 }
     

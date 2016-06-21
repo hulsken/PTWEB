@@ -60,11 +60,12 @@ else
 	$nom     = (isset($_POST['nom']))     ? Rec($_POST['nom'])     : '';
 	$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
+	$objet = (isset($_POST['objet'])) ? Rec($_POST['objet']) : '';
  
 	// On va vérifier les variables et l'email ...
 	$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
  
-	if (($nom != '') && ($email != '') && ($message != ''))
+	if (($nom != '') && ($email != '') && ($objet != '') && ($message != ''))
 	{
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -100,7 +101,7 @@ else
 		$tmp = explode(';', $cible);
 		foreach($tmp as $email_destinataire)
 		{
-			if (mail($email_destinataire, $message, $headers))
+			if (mail($email_destinataire, $objet, $message, $headers))
 				$num_emails++;
 		}
  
@@ -116,7 +117,7 @@ else
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="contact.html">Retour au formulaire</a></p>'."\n";
+		echo '<p>'.$message_formulaire_invalide.' <a href="index.html">Retour au formulaire</a></p>'."\n";
 	};
 }; // fin du if (!isset($_POST['envoi']))
 ?>

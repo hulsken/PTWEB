@@ -1,4 +1,6 @@
 /*Menu*/
+.header {background-color: #f3f3f3;
+}
 /*sticky*/
 .fixed {position: fixed;
     top: 0;
@@ -11,10 +13,10 @@
     float: left;
     width: calc(100% / 5);
     height: 2em;
-    text-align: center;
     padding: 5px;
     background-color: #5B180E;
     color: #fff;
+    text-align: center;
 }
 
 

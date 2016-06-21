@@ -122,7 +122,7 @@ h3 {text-align: center;
     margin-bottom: 20px;
 }
 
-.orgacompetences p {text-align: justify;
+.orgacompetences p {text-align:center;
     -moz-text-align-last: center;
     text-align-last: center;
     width: calc(0.8 * 100%);
@@ -236,8 +236,8 @@ h3 {text-align: center;
     padding-right: 70px;
 }
 
-input[type=text]{margin-bottom: 20px;
-    margin-top: 10px;
+input[type=text]{margin-bottom: 5px;
+    margin-top: 5px;
     width:100%;
     padding: 15px;
     border-radius:5px;
@@ -277,3 +277,6 @@ footer {background-color: #5B180E;
     float: left;
     width: 100%;
 }
+
+
+

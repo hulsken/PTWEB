@@ -1,15 +1,19 @@
+.itemsp {margin: 0 auto;
+    padding-left: calc(0.04 * 100%);
+}
+
 .portfolio .item {
-    width: 48%; 
+    width: 450px; 
     display: block; 
     color: #fff;
     box-sizing: border-box;
+    margin-left: 15px;
     padding: 1em;
     position: relative; /* La position relative permet de dire que les éléments suivants devront se placer par rapport à celui ci. On transforme .item en référence pour les prochains éléments qui seront en position absolute. */
     height: 300px;
     overflow: hidden; /* Grâce à cette ligne, on évite les débordements, et surtout on cache l'état 0 des animations. */
     cursor: pointer;
     margin-bottom: 20px;
-    border: 3px solid #fff;
     box-shadow: 0 0 10px rgba(0,0,0,.2); /* Permet d'ajouter une ombre portée légère, les paramètres dans l'ordre sont : x, y, portée, couleur. */
     transition: all .2s ease-in-out; /* Comme pour le menu, on ajoute la transition pour créer un easing sur nos animations. */
     -moz-transition: all .2s ease-in-out;
@@ -90,7 +94,8 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
     top: 0; /* On place la div en haut à gauche */
     width: 100%; /* On dit que la div fait la taille du parent (".item") en largeur */
     z-index: -2; /* On place la div en dessous de l'overlay (donc l'overlay de couleur sera au dessus de l'image, et le texte sera au dessus de l'overlay) */
-    height: 300px;
+    height: 300px; 
+    
     transform: scale(1); /* La transformation "scale" permet de créer un effet de zoom. Par défaut elle est à 1. On initialise donc l'animation avec l'état de base. */
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -138,7 +143,6 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
     line-height: 1.5em;
     position: relative;
     left: 100px;
-    font-family: 'Lato', sans-serif;
     font-size: 13px;
     font-weight: 300;
     text-shadow: 0 0 5px rgba(0,0,0,.4);
@@ -166,7 +170,7 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
     box-sizing: border-box;
     cursor: pointer;
     width: 150px;
-    
+    font-size: 22px;
     /* Petit trick ici : Je veux qu'il soit au milieu de ma box, pour ça : position absolute, left 50%, et le décaler de -(sa largeur / 2) : -150/2 = -75. */
     /* La box doit être en position relative pour que ça fonctionne. */
     position: absolute;
@@ -184,7 +188,7 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 }
  
 .portfolio .item .view-more:hover {
-   background: rgba(0,0,0,.4);
+   background: rgba(1,1,1,.4);
    font-weight: 900;
 }
  
