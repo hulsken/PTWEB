@@ -23,6 +23,8 @@ hr {border-color: red;}
 }
 
 /* Header */
+.main-header {background-color: #F3F3F3;
+}
 .header-entete {background-image: url(../images/header.jpg);
     height:95vh;
     background-repeat: no-repeat; 

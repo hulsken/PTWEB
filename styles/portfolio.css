@@ -117,7 +117,7 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 }
  
 .portfolio .item .item-title {
-    color: white;
+    color: #fff;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 900;

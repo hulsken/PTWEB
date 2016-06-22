@@ -54,7 +54,8 @@
 /*TABLETTE*/
 
 @media (max-width:960px) {
-    
+    .col1 {font-size: 20px;
+    }
     .loisir {
     padding-left: calc(0.01 * 100%);
     }
@@ -80,7 +81,7 @@
     margin: 0 auto;
     }
     
-        .portfolio .item {
+    .portfolio .item {
         width: 400px;
     }
     
@@ -97,7 +98,7 @@
     .contact li {
         padding-left: 0;
     }
-        .contact p {font-size: 22px;}
+    .contact p {font-size: 22px;}
 
     .adresse {
         margin-right: 10px;
