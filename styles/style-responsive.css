@@ -1,7 +1,7 @@
 @media (max-width:1500px) {
     .imgparcours {background-image: url(../images/Parcoursr1500.png);
     width: 900px;
-    height: 484px;
+    height: 404px;
     margin: 0 auto;
     }
 }
@@ -13,7 +13,7 @@
     /*Loisirs*/
     .loisir {
     margin: 0 auto;
-    padding-left: calc(0.1 * 100%);
+    width: calc(0.9 * 100%);
     }
 
     .loisir p {float: left;
@@ -54,6 +54,9 @@
 /*TABLETTE*/
 
 @media (max-width:960px) {
+    .header-entete {background-image: url(../images/fond.png);
+    background-size: cover;
+    }
     .col1 {font-size: 20px;
     }
     .loisir {
@@ -83,6 +86,13 @@
     
     .portfolio .item {
         width: 400px;
+    }
+    .itemsp {text-align: center;
+    }
+    .elmtportfolio {display: inline-block;
+    }
+    .portfolio .item .item-description {text-align: left;
+        font-size: 16px;
     }
     
     /*Contact*/
@@ -122,7 +132,6 @@
         padding-right: 0px;
         margin-bottom: 50px;
     }
-
 }
    
 
@@ -132,6 +141,7 @@
     .portfolio .item {
         width: 250px;
     }
+    
     
    
 }

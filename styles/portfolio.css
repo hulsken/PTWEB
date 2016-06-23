@@ -5,6 +5,7 @@
 .portfolio .item {
     width: 450px; 
     display: block; 
+    margin: 0 auto;
     color: #fff;
     box-sizing: border-box;
     margin-left: 15px;
@@ -58,7 +59,7 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
     background: #fff;
     border: none;
     margin: 0; /* On remet à zéro le margin avant de le manipuler plus bas */
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
     transition: all .4s ease-in-out; /* On leur applique à nouveau les transitions pour appliquer le easing. Note qu'ici j'ai mis 0,4s plutôt que 0,2 : C'est pour donner un effet de délai entre les différentes animations. */
     -moz-transition: all .4s ease-in-out;
@@ -122,7 +123,7 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
     text-transform: uppercase;
     font-weight: 900;
     position: relative; /* On place notre titre en position relative afin de pouvoir le déplacer par rapport à son parent ('.item'). */
-    top: 100px; /* Notre titre possède un effet qui apparait du bas vers le haut, pour ça, de base on place notre titre plus bas que prévu. */
+    top: 10px; /* Notre titre possède un effet qui apparait du bas vers le haut, pour ça, de base on place notre titre plus bas que prévu. */
     line-height: 1.3em;
     transition: all .2s ease-in-out; /* Et on prévoit l'animation. */
     -moz-transition: all .2s ease-in-out;
@@ -141,9 +142,8 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
  
 .portfolio .item .item-description {
     line-height: 1.5em;
-    position: relative;
     left: 100px;
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 300;
     text-shadow: 0 0 5px rgba(0,0,0,.4);
     transition: all .2s ease-in-out;

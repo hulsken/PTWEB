@@ -1,19 +1,19 @@
 /*Menu*/
-.header {background-color: #f3f3f3;
-}
+
 /*sticky*/
 .fixed {position: fixed;
     top: 0;
     width: 100%;
+    z-index: 99;
 }
 
 .col1 {
     float: left;
     width: calc(100% / 5);
     height: 2em;
-    padding: 5px;
-    background-color: #5B180E;
+    background-color: rgba(106, 21, 15, 0.9);
     color: #fff;
+    padding-top: 5px;
     text-align: center;
 }
 
